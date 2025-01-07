@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CipherTalk</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+            background: url('gambar1.png') no-repeat center center;
+            background-size: cover; /* Pastikan gambar memenuhi frame */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px;
+            position: absolute;
+            top: 15px; /* Naikkan posisi nav */
+            right: 10%;
+            left: 20%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white; /* Default warna link putih */
+            margin: 0 30px;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative; /* Untuk garis bawah */
+        }
+
+        nav a.active {
+            color: #7bbce8; /* Warna biru untuk halaman aktif */
+        }
+
+        nav a.active::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #8cb5ee; /* Garis bawah biru untuk halaman aktif */
+        }
+
+        nav a:hover {
+            color: #feddf5; /* Pink lembut saat hover */
+        }
+
+        .container {
+            padding: 80px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.3rem; /* Perkecil ukuran judul */
+            margin-bottom: 10px;
+            color: #ffffff; 
+            display: flex;
+            align-items: center;
+        }
+
+        .section h2 .icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            margin-right: 15px;
+        }
+
+        .section h2 span {
+            display: inline-block;
+            margin-top: 5px; /* Geser elemen turun */
+        }
+
+        .section p {
+            font-size: 0.9rem;
+            margin-top: 5px;
+            margin-left: 45px;
+        }
+
+        .section ul {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        ul li {
+            margin-bottom: 8px; /* Kurangi jarak antar item */
+            font-size: 0.9rem; /* Ukuran huruf untuk list */
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="tools.html">AES Tools</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <h2><span class="icon" style="background-image: url('ikon1.png');"></span><span>Pengertian AES Encryption</span></h2>
+            <p>AES (Advanced Encryption Standard) adalah algoritma enkripsi yang digunakan secara luas karena tingkat keamanannya yang tinggi dan efisiensinya. Algoritma ini bekerja dengan berbagai mode seperti CBC, dan menggunakan padding seperti PKCS5 untuk memastikan data terenkripsi dengan aman.</p>
+        </div>
+        <div class="section">
+            <h2><span class="icon" style="background-image: url('ikon1.png');"></span><span>Model AES Berdasarkan Ukuran Kunci (Key Size)</span></h2>
+            <ul>
+                <li>AES-128: Ukuran kunci: 128-bit; Jumlah ronde: 10 ronde proses enkripsi/dekripsi; Digunakan untuk aplikasi yang membutuhkan kecepatan tinggi dan cukup aman untuk sebagian besar kasus.</li>
+                <li>AES-192: Ukuran kunci: 192-bit; Jumlah ronde: 12 ronde; Memberikan tingkat keamanan lebih tinggi dibandingkan AES-128.</li>
+                <li>AES-256: Ukuran kunci: 256-bit; Jumlah ronde: 14 ronde; Digunakan untuk aplikasi yang membutuhkan tingkat keamanan sangat tinggi, seperti militer dan pemerintahan.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2><span class="icon" style="background-image: url('ikon1.png');"></span><span>Input dalam AES</span></h2>
+            <ul>
+                <li>Secret Key: Kunci enkripsi yang digunakan untuk mengamankan data dan hanya pihak yang memiliki kunci ini yang dapat mendekripsi data tersebut.</li>
+                <li>Key Size: Panjang kunci dalam bit yang digunakan dalam proses enkripsi (128, 192, atau 256 bit).</li>
+                <li>Plaintext: Data asli yang akan dienkripsi menggunakan algoritma AES.</li>
+                <li>Ciphertext: Hasil dari proses enkripsi berupa teks terenkripsi yang tidak dapat dibaca tanpa proses dekripsi.</li>
+                <li>Initialization Vector (IV): Blok data acak yang digunakan untuk meningkatkan keamanan dengan mencegah ciphertext identik untuk plaintext yang sama.</li>
+                <li>Block Size: Ukuran blok data yang diproses dalam satu siklus enkripsi/dekripsi, selalu 128-bit dalam AES.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

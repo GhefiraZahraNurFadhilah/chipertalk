@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CipherTalk</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+            background: url('gambar1.png') no-repeat center center;
+            background-size: cover; /* Pastikan gambar memenuhi frame */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px;
+            position: absolute;
+            top: 15px; /* Naikkan posisi nav */
+            right: 10%;
+            left: 20%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white; /* Default warna link putih */
+            margin: 0 30px;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative; /* Untuk garis bawah */
+        }
+
+        nav a.active {
+            color: #7bbce8; /* Warna biru untuk halaman aktif */
+        }
+
+        nav a.active::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #8cb5ee; /* Garis bawah biru untuk halaman aktif */
+        }
+
+        nav a:hover {
+            color: #feddf5; /* Pink lembut saat hover */
+        }
+
+
+        .contact-container {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact-container h1 {
+            font-size: 2rem;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-item img {
+            width: 50px;
+            margin-bottom: 5px;
+        }
+
+        .contact-item h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-item p {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tools.html">AES Tools</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Our Contact</h1>
+        <div class="contact-details">
+            <div class="contact-item">
+                <img src="ikon2.png" alt="Phone Icon">
+                <h3>Phone & Mobile</h3>
+                <p>+62 812 - 4414 - 7678</p>
+            </div>
+            <div class="contact-item">
+                <img src="ikon3.png" alt="Email Icon">
+                <h3>Email</h3>
+                <p>mnsrpridest@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="ikon4.png" alt="Address Icon">
+                <h3>Address</h3>
+                <p>H.E.A. Road Mokodompit,<br>Kendari City, <br>Southeast Sulawesi</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
